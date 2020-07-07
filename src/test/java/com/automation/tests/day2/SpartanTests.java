@@ -23,7 +23,7 @@ public class SpartanTests {
         given().
                 auth().basic("admin","admin").
                 baseUri(BASE_URL).when().
-                get("/api/spartans").prettyPeek().prettyPeek().
+                get("/api/spartans").prettyPeek().
                 then().statusCode(200);
     }
 
